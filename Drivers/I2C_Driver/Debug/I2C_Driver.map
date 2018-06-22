@@ -1,0 +1,456 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o (exit)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./DIO_Prog.o (__do_clear_bss)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+LOAD ./DIO_Cfg.o
+LOAD ./DIO_Prog.o
+LOAD ./I2C_Prog.o
+LOAD ./main.o
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xb4a
+ *(.vectors)
+ .vectors       0x00000000       0x54 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x10 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000060                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000070        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ *(.init9)
+ *(.text)
+ .text          0x00000078        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+                0x00000078                __vector_1
+                0x00000078                __vector_12
+                0x00000078                __bad_interrupt
+                0x00000078                __vector_6
+                0x00000078                __vector_3
+                0x00000078                __vector_11
+                0x00000078                __vector_13
+                0x00000078                __vector_17
+                0x00000078                __vector_19
+                0x00000078                __vector_7
+                0x00000078                __vector_5
+                0x00000078                __vector_4
+                0x00000078                __vector_9
+                0x00000078                __vector_2
+                0x00000078                __vector_15
+                0x00000078                __vector_8
+                0x00000078                __vector_14
+                0x00000078                __vector_10
+                0x00000078                __vector_16
+                0x00000078                __vector_18
+                0x00000078                __vector_20
+ .text          0x0000007c        0x0 ./DIO_Cfg.o
+ .text          0x0000007c        0x0 ./DIO_Prog.o
+ .text          0x0000007c        0x0 ./I2C_Prog.o
+ .text          0x0000007c        0x0 ./main.o
+ .text          0x0000007c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x0000007c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x0000007c                . = ALIGN (0x2)
+ *(.text.*)
+ .text.DIO_vidPortIdentification
+                0x0000007c       0xfa ./DIO_Prog.o
+                0x0000007c                DIO_vidPortIdentification
+ .text.DIO_vidSetPinDirection
+                0x00000176      0x144 ./DIO_Prog.o
+                0x00000176                DIO_vidSetPinDirection
+ .text.DIO_vidSetLowNibbleDirection
+                0x000002ba       0xbc ./DIO_Prog.o
+                0x000002ba                DIO_vidSetLowNibbleDirection
+ .text.DIO_vidSetHighNibbleDirection
+                0x00000376       0xbc ./DIO_Prog.o
+                0x00000376                DIO_vidSetHighNibbleDirection
+ .text.DIO_vidSetPortDirection
+                0x00000432       0x84 ./DIO_Prog.o
+                0x00000432                DIO_vidSetPortDirection
+ .text.DIO_vidSetPinValue
+                0x000004b6       0x94 ./DIO_Prog.o
+                0x000004b6                DIO_vidSetPinValue
+ .text.DIO_vidTogglePinValue
+                0x0000054a       0x50 ./DIO_Prog.o
+                0x0000054a                DIO_vidTogglePinValue
+ .text.DIO_vidSetLowNibbleValue
+                0x0000059a       0x58 ./DIO_Prog.o
+                0x0000059a                DIO_vidSetLowNibbleValue
+ .text.DIO_vidToggleLowNibbleValue
+                0x000005f2       0x32 ./DIO_Prog.o
+                0x000005f2                DIO_vidToggleLowNibbleValue
+ .text.DIO_vidAssignLowNibbleValue
+                0x00000624       0x4c ./DIO_Prog.o
+                0x00000624                DIO_vidAssignLowNibbleValue
+ .text.DIO_vidSetHighNibbleValue
+                0x00000670       0x58 ./DIO_Prog.o
+                0x00000670                DIO_vidSetHighNibbleValue
+ .text.DIO_vidToggleHighNibbleValue
+                0x000006c8       0x32 ./DIO_Prog.o
+                0x000006c8                DIO_vidToggleHighNibbleValue
+ .text.DIO_vidAssignHighNibbleValue
+                0x000006fa       0x5e ./DIO_Prog.o
+                0x000006fa                DIO_vidAssignHighNibbleValue
+ .text.DIO_vidSetPortValue
+                0x00000758       0x42 ./DIO_Prog.o
+                0x00000758                DIO_vidSetPortValue
+ .text.DIO_vidTogglePortValue
+                0x0000079a       0x30 ./DIO_Prog.o
+                0x0000079a                DIO_vidTogglePortValue
+ .text.DIO_vidAssignPortValue
+                0x000007ca       0x40 ./DIO_Prog.o
+                0x000007ca                DIO_vidAssignPortValue
+ .text.DIO_u8GetPinValue
+                0x0000080a       0x66 ./DIO_Prog.o
+                0x0000080a                DIO_u8GetPinValue
+ .text.DIO_u8GetLowNibbleValue
+                0x00000870       0x2c ./DIO_Prog.o
+                0x00000870                DIO_u8GetLowNibbleValue
+ .text.DIO_u8GetHighNibbleValue
+                0x0000089c       0x2e ./DIO_Prog.o
+                0x0000089c                DIO_u8GetHighNibbleValue
+ .text.DIO_u8GetPortValue
+                0x000008ca       0x2a ./DIO_Prog.o
+                0x000008ca                DIO_u8GetPortValue
+ .text.DIO_vidSPIMasterPinConfigurations
+                0x000008f4       0x26 ./DIO_Prog.o
+                0x000008f4                DIO_vidSPIMasterPinConfigurations
+ .text.DIO_vidSPISlavePinConfigurations
+                0x0000091a       0x2e ./DIO_Prog.o
+                0x0000091a                DIO_vidSPISlavePinConfigurations
+ .text.I2C_vidInitialization
+                0x00000948       0x3a ./I2C_Prog.o
+                0x00000948                I2C_vidInitialization
+ .text.I2C_vidMasterStartCondition
+                0x00000982       0x4e ./I2C_Prog.o
+                0x00000982                I2C_vidMasterStartCondition
+ .text.I2C_vidMasterStopCondition
+                0x000009d0       0x38 ./I2C_Prog.o
+                0x000009d0                I2C_vidMasterStopCondition
+ .text.I2C_vidWrite
+                0x00000a08       0x64 ./I2C_Prog.o
+                0x00000a08                I2C_vidWrite
+ .text.I2C_vidGetStatus
+                0x00000a6c       0x1e ./I2C_Prog.o
+                0x00000a6c                I2C_vidGetStatus
+ .text.I2C_vidReadACK
+                0x00000a8a       0x54 ./I2C_Prog.o
+                0x00000a8a                I2C_vidReadACK
+ .text.I2C_vidReadNACK
+                0x00000ade       0x46 ./I2C_Prog.o
+                0x00000ade                I2C_vidReadNACK
+ .text.main     0x00000b24       0x22 ./main.o
+                0x00000b24                main
+ .text.libgcc   0x00000b46        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000b46        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000b46                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000b46        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00000b46                exit
+                0x00000b46                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000b46        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000b4a                _etext = .
+
+.data           0x00800060        0x0 load address 0x00000b4a
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ .data          0x00800060        0x0 ./DIO_Cfg.o
+ .data          0x00800060        0x0 ./DIO_Prog.o
+ .data          0x00800060        0x0 ./I2C_Prog.o
+ .data          0x00800060        0x0 ./main.o
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800060                . = ALIGN (0x2)
+                0x00800060                _edata = .
+                0x00800060                PROVIDE (__data_end, .)
+
+.bss            0x00800060        0x6
+                0x00800060                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ .bss           0x00800060        0x0 ./DIO_Cfg.o
+ .bss           0x00800060        0x0 ./DIO_Prog.o
+ .bss           0x00800060        0x0 ./I2C_Prog.o
+ .bss           0x00800060        0x0 ./main.o
+ .bss           0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ .bss.Global_pu8DIODDR
+                0x00800060        0x2 ./DIO_Prog.o
+                0x00800060                Global_pu8DIODDR
+ .bss.Global_pu8DIOPIN
+                0x00800062        0x2 ./DIO_Prog.o
+                0x00800062                Global_pu8DIOPIN
+ .bss.Global_pu8DIOPORT
+                0x00800064        0x2 ./DIO_Prog.o
+                0x00800064                Global_pu8DIOPORT
+ *(COMMON)
+                0x00800066                PROVIDE (__bss_end, .)
+                0x00000b4a                __data_load_start = LOADADDR (.data)
+                0x00000b4a                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800066        0x0
+                0x00800066                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800066                PROVIDE (__noinit_end, .)
+                0x00800066                _end = .
+                0x00800066                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x111c
+ *(.stab)
+ .stab          0x00000000       0xe4 ./DIO_Cfg.o
+ .stab          0x000000e4      0xbd0 ./DIO_Prog.o
+                                0xbdc (size before relaxing)
+ .stab          0x00000cb4      0x330 ./I2C_Prog.o
+                                0x3a8 (size before relaxing)
+ .stab          0x00000fe4      0x138 ./main.o
+                                0x1b0 (size before relaxing)
+
+.stabstr        0x00000000      0x984
+ *(.stabstr)
+ .stabstr       0x00000000      0x984 ./DIO_Cfg.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(I2C_Driver.elf elf32-avr)
+LOAD linker stubs
